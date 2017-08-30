@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { InviteButton } from '../../invite';
 import { Toolbox } from '../../toolbox';
 
 import { shouldRemoteVideosBeVisible } from '../functions';
@@ -55,6 +56,10 @@ class Filmstrip extends Component {
                     <div
                         className = 'filmstrip__videos'
                         id = 'filmstripLocalVideo' />
+                    <div
+                        className = 'filmstrip__videos'>
+                        <InviteButton />
+                    </div>
                     <div
                         className = 'filmstrip__videos'
                         id = 'filmstripRemoteVideos'>

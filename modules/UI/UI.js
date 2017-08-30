@@ -37,7 +37,6 @@ import {
     showDialPadButton,
     showEtherpadButton,
     showSharedVideoButton,
-    showDialOutButton,
     showToolbox
 } from '../../react/features/toolbox';
 import {
@@ -485,7 +484,6 @@ UI.onPeerVideoTypeChanged
 UI.updateLocalRole = isModerator => {
     VideoLayout.showModeratorIndicator();
 
-    APP.store.dispatch(showDialOutButton(isModerator));
     APP.store.dispatch(showSharedVideoButton());
 
     Recording.showRecordingButton(isModerator);
