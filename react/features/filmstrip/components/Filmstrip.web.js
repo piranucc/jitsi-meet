@@ -55,9 +55,7 @@ class Filmstrip extends Component {
                     id = 'remoteVideos'>
                     <div
                         className = 'filmstrip__videos'
-                        id = 'filmstripLocalVideo' />
-                    <div
-                        className = 'filmstrip__videos'>
+                        id = 'filmstripLocalVideo'>
                         <InviteButton />
                     </div>
                     <div
